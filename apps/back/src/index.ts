@@ -12,5 +12,5 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 API server running on http://localhost:${PORT}`);
+  console.log(`API server running on http://localhost:${PORT}`);
 });
