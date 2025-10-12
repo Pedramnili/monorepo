@@ -1,0 +1,426 @@
+// Red ------------------------------------------------
+button.rs-btn.rs-btn-red.my_rsuite {
+  --rs-btn-ghost-active-border         : var(--rs-red-100);
+  --rs-btn-ghost-active-text           : var(--rs-red-100);
+  --rs-btn-ghost-border                : var(--rs-red-300);
+  --rs-btn-ghost-hover-border          : var(--rs-red-200);
+  --rs-btn-ghost-hover-text            : var(--rs-red-200);
+  --rs-btn-ghost-text                  : var(--rs-red-300);
+  --rs-btn-link-active-text            : var(--rs-red-100);
+  --rs-btn-link-hover-text             : var(--rs-red-200);
+  --rs-btn-link-text                   : var(--rs-red-300);
+  --rs-btn-primary-active-bg           : var(--rs-red-200);
+  --rs-btn-primary-bg                  : var(--rs-red-400);
+  --rs-btn-primary-hover-bg            : var(--rs-red-300);
+  --rs-btn-primary-text                : var(--rs-gray-900);
+  --rs-btn-subtle-active-bg            : var(--rs-red-200);
+  --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+  --rs-btn-subtle-hover-bg             : var(--rs-red-100);
+  --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+  --rs-iconbtn-primary-activated-addon : var(--rs-red-200);
+  --rs-iconbtn-primary-addon           : var(--rs-red-100);
+  --rs-iconbtn-primary-pressed-addon   : var(--rs-red-100);
+
+  svg {
+    --rs-iconbtn-primary-activated-addon : var(--rs-red-200);
+    --rs-iconbtn-primary-addon           : var(--rs-red-300);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-red-300);
+  }
+}
+
+.rs-theme-dark {
+  button.rs-btn.rs-btn-red.my_rsuite {
+    --rs-btn-ghost-active-border         : var(--rs-red-500);
+    --rs-btn-ghost-active-text           : var(--rs-red-500);
+    --rs-btn-ghost-border                : var(--rs-red-800);
+    --rs-btn-ghost-hover-border          : var(--rs-red-700);
+    --rs-btn-ghost-hover-text            : var(--rs-red-700);
+    --rs-btn-ghost-text                  : var(--rs-red-800);
+    --rs-btn-link-active-text            : var(--rs-red-500);
+    --rs-btn-link-hover-text             : var(--rs-red-700);
+    --rs-btn-link-text                   : var(--rs-red-800);
+    --rs-btn-primary-active-bg           : var(--rs-red-700);
+    --rs-btn-primary-bg                  : var(--rs-red-900);
+    --rs-btn-primary-hover-bg            : var(--rs-red-800);
+    --rs-btn-primary-text                : var(--rs-gray-50);
+    --rs-btn-subtle-active-bg            : var(--rs-red-700);
+    --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+    --rs-btn-subtle-hover-bg             : var(--rs-red-600);
+    --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+    --rs-iconbtn-primary-activated-addon : var(--rs-red-700);
+    --rs-iconbtn-primary-addon           : var(--rs-red-600);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-red-600);
+
+    svg {
+      --rs-iconbtn-primary-activated-addon : var(--rs-red-700);
+      --rs-iconbtn-primary-addon           : var(--rs-red-800);
+      --rs-iconbtn-primary-pressed-addon   : var(--rs-red-800);
+    }
+  }
+}
+
+// Orange ------------------------------------------------
+button.rs-btn.rs-btn-orange.my_rsuite {
+  --rs-btn-ghost-active-border         : var(--rs-orange-100);
+  --rs-btn-ghost-active-text           : var(--rs-orange-100);
+  --rs-btn-ghost-border                : var(--rs-orange-300);
+  --rs-btn-ghost-hover-border          : var(--rs-orange-200);
+  --rs-btn-ghost-hover-text            : var(--rs-orange-200);
+  --rs-btn-ghost-text                  : var(--rs-orange-300);
+  --rs-btn-link-active-text            : var(--rs-orange-100);
+  --rs-btn-link-hover-text             : var(--rs-orange-200);
+  --rs-btn-link-text                   : var(--rs-orange-300);
+  --rs-btn-primary-active-bg           : var(--rs-orange-200);
+  --rs-btn-primary-bg                  : var(--rs-orange-400);
+  --rs-btn-primary-hover-bg            : var(--rs-orange-300);
+  --rs-btn-primary-text                : var(--rs-gray-900);
+  --rs-btn-subtle-active-bg            : var(--rs-orange-200);
+  --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+  --rs-btn-subtle-hover-bg             : var(--rs-orange-100);
+  --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+  --rs-iconbtn-primary-activated-addon : var(--rs-orange-200);
+  --rs-iconbtn-primary-addon           : var(--rs-orange-100);
+  --rs-iconbtn-primary-pressed-addon   : var(--rs-orange-100);
+
+  svg {
+    --rs-iconbtn-primary-activated-addon : var(--rs-orange-200);
+    --rs-iconbtn-primary-addon           : var(--rs-orange-300);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-orange-300);
+  }
+}
+
+.rs-theme-dark {
+  button.rs-btn.rs-btn-orange.my_rsuite {
+    --rs-btn-ghost-active-border         : var(--rs-orange-500);
+    --rs-btn-ghost-active-text           : var(--rs-orange-500);
+    --rs-btn-ghost-border                : var(--rs-orange-800);
+    --rs-btn-ghost-hover-border          : var(--rs-orange-700);
+    --rs-btn-ghost-hover-text            : var(--rs-orange-700);
+    --rs-btn-ghost-text                  : var(--rs-orange-800);
+    --rs-btn-link-active-text            : var(--rs-orange-500);
+    --rs-btn-link-hover-text             : var(--rs-orange-700);
+    --rs-btn-link-text                   : var(--rs-orange-800);
+    --rs-btn-primary-active-bg           : var(--rs-orange-700);
+    --rs-btn-primary-bg                  : var(--rs-orange-900);
+    --rs-btn-primary-hover-bg            : var(--rs-orange-800);
+    --rs-btn-primary-text                : rgb(245, 245, 245);
+    --rs-btn-subtle-active-bg            : var(--rs-orange-700);
+    --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+    --rs-btn-subtle-hover-bg             : var(--rs-orange-600);
+    --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+    --rs-iconbtn-primary-activated-addon : var(--rs-orange-700);
+    --rs-iconbtn-primary-addon           : var(--rs-orange-600);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-orange-600);
+
+    svg {
+      --rs-iconbtn-primary-activated-addon : var(--rs-orange-700);
+      --rs-iconbtn-primary-addon           : var(--rs-orange-800);
+      --rs-iconbtn-primary-pressed-addon   : var(--rs-orange-800);
+    }
+  }
+}
+
+// Yellow ------------------------------------------------
+button.rs-btn.rs-btn-yellow.my_rsuite {
+  --rs-btn-ghost-active-border         : var(--rs-yellow-100);
+  --rs-btn-ghost-active-text           : var(--rs-yellow-100);
+  --rs-btn-ghost-border                : var(--rs-yellow-300);
+  --rs-btn-ghost-hover-border          : var(--rs-yellow-200);
+  --rs-btn-ghost-hover-text            : var(--rs-yellow-200);
+  --rs-btn-ghost-text                  : var(--rs-yellow-300);
+  --rs-btn-link-active-text            : var(--rs-yellow-100);
+  --rs-btn-link-hover-text             : var(--rs-yellow-200);
+  --rs-btn-link-text                   : var(--rs-yellow-300);
+  --rs-btn-primary-active-bg           : var(--rs-yellow-200);
+  --rs-btn-primary-bg                  : var(--rs-yellow-400);
+  --rs-btn-primary-hover-bg            : var(--rs-yellow-300);
+  --rs-btn-primary-text                : var(--rs-gray-900);
+  --rs-btn-subtle-active-bg            : var(--rs-yellow-200);
+  --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+  --rs-btn-subtle-hover-bg             : var(--rs-yellow-100);
+  --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+  --rs-iconbtn-primary-activated-addon : var(--rs-yellow-200);
+  --rs-iconbtn-primary-addon           : var(--rs-yellow-100);
+  --rs-iconbtn-primary-pressed-addon   : var(--rs-yellow-100);
+
+  svg {
+    --rs-iconbtn-primary-activated-addon : var(--rs-yellow-200);
+    --rs-iconbtn-primary-addon           : var(--rs-yellow-300);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-yellow-300);
+  }
+}
+
+.rs-theme-dark {
+  button.rs-btn.rs-btn-yellow.my_rsuite {
+    --rs-btn-ghost-active-border         : var(--rs-yellow-500);
+    --rs-btn-ghost-active-text           : var(--rs-yellow-500);
+    --rs-btn-ghost-border                : var(--rs-yellow-800);
+    --rs-btn-ghost-hover-border          : var(--rs-yellow-700);
+    --rs-btn-ghost-hover-text            : var(--rs-yellow-700);
+    --rs-btn-ghost-text                  : var(--rs-yellow-800);
+    --rs-btn-link-active-text            : var(--rs-yellow-500);
+    --rs-btn-link-hover-text             : var(--rs-yellow-700);
+    --rs-btn-link-text                   : var(--rs-yellow-800);
+    --rs-btn-primary-active-bg           : var(--rs-yellow-700);
+    --rs-btn-primary-bg                  : var(--rs-yellow-900);
+    --rs-btn-primary-hover-bg            : var(--rs-yellow-800);
+    --rs-btn-primary-text                : rgb(245, 245, 245);
+    --rs-btn-subtle-active-bg            : var(--rs-yellow-700);
+    --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+    --rs-btn-subtle-hover-bg             : var(--rs-yellow-600);
+    --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+    --rs-iconbtn-primary-activated-addon : var(--rs-yellow-700);
+    --rs-iconbtn-primary-addon           : var(--rs-yellow-600);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-yellow-600);
+
+    svg {
+      --rs-iconbtn-primary-activated-addon : var(--rs-yellow-700);
+      --rs-iconbtn-primary-addon           : var(--rs-yellow-800);
+      --rs-iconbtn-primary-pressed-addon   : var(--rs-yellow-800);
+    }
+  }
+}
+
+// Green ------------------------------------------------
+button.rs-btn.rs-btn-green.my_rsuite {
+  --rs-btn-ghost-active-border         : var(--rs-green-100);
+  --rs-btn-ghost-active-text           : var(--rs-green-100);
+  --rs-btn-ghost-border                : var(--rs-green-300);
+  --rs-btn-ghost-hover-border          : var(--rs-green-200);
+  --rs-btn-ghost-hover-text            : var(--rs-green-200);
+  --rs-btn-ghost-text                  : var(--rs-green-300);
+  --rs-btn-link-active-text            : var(--rs-green-100);
+  --rs-btn-link-hover-text             : var(--rs-green-200);
+  --rs-btn-link-text                   : var(--rs-green-300);
+  --rs-btn-primary-active-bg           : var(--rs-green-200);
+  --rs-btn-primary-bg                  : var(--rs-green-400);
+  --rs-btn-primary-hover-bg            : var(--rs-green-300);
+  --rs-btn-primary-text                : var(--rs-gray-900);
+  --rs-btn-subtle-active-bg            : var(--rs-green-200);
+  --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+  --rs-btn-subtle-hover-bg             : var(--rs-green-100);
+  --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+  --rs-iconbtn-primary-activated-addon : var(--rs-green-200);
+  --rs-iconbtn-primary-addon           : var(--rs-green-100);
+  --rs-iconbtn-primary-pressed-addon   : var(--rs-green-100);
+
+  svg {
+    --rs-iconbtn-primary-activated-addon : var(--rs-green-200);
+    --rs-iconbtn-primary-addon           : var(--rs-green-300);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-green-300);
+  }
+}
+
+.rs-theme-dark {
+  button.rs-btn.rs-btn-green.my_rsuite {
+    --rs-btn-ghost-active-border         : var(--rs-green-500);
+    --rs-btn-ghost-active-text           : var(--rs-green-500);
+    --rs-btn-ghost-border                : var(--rs-green-800);
+    --rs-btn-ghost-hover-border          : var(--rs-green-700);
+    --rs-btn-ghost-hover-text            : var(--rs-green-700);
+    --rs-btn-ghost-text                  : var(--rs-green-800);
+    --rs-btn-link-active-text            : var(--rs-green-500);
+    --rs-btn-link-hover-text             : var(--rs-green-700);
+    --rs-btn-link-text                   : var(--rs-green-800);
+    --rs-btn-primary-active-bg           : var(--rs-green-700);
+    --rs-btn-primary-bg                  : var(--rs-green-900);
+    --rs-btn-primary-hover-bg            : var(--rs-green-800);
+    --rs-btn-primary-text                : rgb(245, 245, 245);
+    --rs-btn-subtle-active-bg            : var(--rs-green-700);
+    --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+    --rs-btn-subtle-hover-bg             : var(--rs-green-600);
+    --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+    --rs-iconbtn-primary-activated-addon : var(--rs-green-700);
+    --rs-iconbtn-primary-addon           : var(--rs-green-600);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-green-600);
+
+    svg {
+      --rs-iconbtn-primary-activated-addon : var(--rs-green-700);
+      --rs-iconbtn-primary-addon           : var(--rs-green-800);
+      --rs-iconbtn-primary-pressed-addon   : var(--rs-green-800);
+    }
+  }
+}
+
+// Cyan ------------------------------------------------
+button.rs-btn.rs-btn-cyan.my_rsuite {
+  --rs-btn-ghost-active-border         : var(--rs-cyan-100);
+  --rs-btn-ghost-active-text           : var(--rs-cyan-100);
+  --rs-btn-ghost-border                : var(--rs-cyan-300);
+  --rs-btn-ghost-hover-border          : var(--rs-cyan-200);
+  --rs-btn-ghost-hover-text            : var(--rs-cyan-200);
+  --rs-btn-ghost-text                  : var(--rs-cyan-300);
+  --rs-btn-link-active-text            : var(--rs-cyan-100);
+  --rs-btn-link-hover-text             : var(--rs-cyan-200);
+  --rs-btn-link-text                   : var(--rs-cyan-300);
+  --rs-btn-primary-active-bg           : var(--rs-cyan-200);
+  --rs-btn-primary-bg                  : var(--rs-cyan-400);
+  --rs-btn-primary-hover-bg            : var(--rs-cyan-300);
+  --rs-btn-primary-text                : var(--rs-gray-900);
+  --rs-btn-subtle-active-bg            : var(--rs-cyan-200);
+  --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+  --rs-btn-subtle-hover-bg             : var(--rs-cyan-100);
+  --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+  --rs-iconbtn-primary-activated-addon : var(--rs-cyan-200);
+  --rs-iconbtn-primary-addon           : var(--rs-cyan-100);
+  --rs-iconbtn-primary-pressed-addon   : var(--rs-cyan-100);
+
+  svg {
+    --rs-iconbtn-primary-activated-addon : var(--rs-cyan-200);
+    --rs-iconbtn-primary-addon           : var(--rs-cyan-300);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-cyan-300);
+  }
+}
+
+.rs-theme-dark {
+  button.rs-btn.rs-btn-cyan.my_rsuite {
+    --rs-btn-ghost-active-border         : var(--rs-cyan-500);
+    --rs-btn-ghost-active-text           : var(--rs-cyan-500);
+    --rs-btn-ghost-border                : var(--rs-cyan-800);
+    --rs-btn-ghost-hover-border          : var(--rs-cyan-700);
+    --rs-btn-ghost-hover-text            : var(--rs-cyan-700);
+    --rs-btn-ghost-text                  : var(--rs-cyan-800);
+    --rs-btn-link-active-text            : var(--rs-cyan-500);
+    --rs-btn-link-hover-text             : var(--rs-cyan-700);
+    --rs-btn-link-text                   : var(--rs-cyan-800);
+    --rs-btn-primary-active-bg           : var(--rs-cyan-700);
+    --rs-btn-primary-bg                  : var(--rs-cyan-900);
+    --rs-btn-primary-hover-bg            : var(--rs-cyan-800);
+    --rs-btn-primary-text                : rgb(245, 245, 245);
+    --rs-btn-subtle-active-bg            : var(--rs-cyan-700);
+    --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+    --rs-btn-subtle-hover-bg             : var(--rs-cyan-600);
+    --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+    --rs-iconbtn-primary-activated-addon : var(--rs-cyan-700);
+    --rs-iconbtn-primary-addon           : var(--rs-cyan-600);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-cyan-600);
+
+    svg {
+      --rs-iconbtn-primary-activated-addon : var(--rs-cyan-700);
+      --rs-iconbtn-primary-addon           : var(--rs-cyan-800);
+      --rs-iconbtn-primary-pressed-addon   : var(--rs-cyan-800);
+    }
+  }
+}
+
+// Blue ------------------------------------------------
+button.rs-btn.rs-btn-blue.my_rsuite {
+  --rs-btn-ghost-active-border         : var(--rs-blue-100);
+  --rs-btn-ghost-active-text           : var(--rs-blue-100);
+  --rs-btn-ghost-border                : var(--rs-blue-300);
+  --rs-btn-ghost-hover-border          : var(--rs-blue-200);
+  --rs-btn-ghost-hover-text            : var(--rs-blue-200);
+  --rs-btn-ghost-text                  : var(--rs-blue-300);
+  --rs-btn-link-active-text            : var(--rs-blue-100);
+  --rs-btn-link-hover-text             : var(--rs-blue-200);
+  --rs-btn-link-text                   : var(--rs-blue-300);
+  --rs-btn-primary-active-bg           : var(--rs-blue-200);
+  --rs-btn-primary-bg                  : var(--rs-blue-400);
+  --rs-btn-primary-hover-bg            : var(--rs-blue-300);
+  --rs-btn-primary-text                : var(--rs-gray-900);
+  --rs-btn-subtle-active-bg            : var(--rs-blue-200);
+  --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+  --rs-btn-subtle-hover-bg             : var(--rs-blue-100);
+  --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+  --rs-iconbtn-primary-activated-addon : var(--rs-blue-200);
+  --rs-iconbtn-primary-addon           : var(--rs-blue-100);
+  --rs-iconbtn-primary-pressed-addon   : var(--rs-blue-100);
+
+  svg {
+    --rs-iconbtn-primary-activated-addon : var(--rs-blue-200);
+    --rs-iconbtn-primary-addon           : var(--rs-blue-300);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-blue-300);
+  }
+}
+
+.rs-theme-dark {
+  button.rs-btn.rs-btn-blue.my_rsuite {
+    --rs-btn-ghost-active-border         : var(--rs-blue-500);
+    --rs-btn-ghost-active-text           : var(--rs-blue-500);
+    --rs-btn-ghost-border                : var(--rs-blue-800);
+    --rs-btn-ghost-hover-border          : var(--rs-blue-700);
+    --rs-btn-ghost-hover-text            : var(--rs-blue-700);
+    --rs-btn-ghost-text                  : var(--rs-blue-800);
+    --rs-btn-link-active-text            : var(--rs-blue-500);
+    --rs-btn-link-hover-text             : var(--rs-blue-700);
+    --rs-btn-link-text                   : var(--rs-blue-800);
+    --rs-btn-primary-active-bg           : var(--rs-blue-700);
+    --rs-btn-primary-bg                  : var(--rs-blue-900);
+    --rs-btn-primary-hover-bg            : var(--rs-blue-800);
+    --rs-btn-primary-text                : var(--rs-gray-50);
+    --rs-btn-subtle-active-bg            : var(--rs-blue-700);
+    --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+    --rs-btn-subtle-hover-bg             : var(--rs-blue-600);
+    --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+    --rs-iconbtn-primary-activated-addon : var(--rs-blue-700);
+    --rs-iconbtn-primary-addon           : var(--rs-blue-600);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-blue-600);
+
+    svg {
+      --rs-iconbtn-primary-activated-addon : var(--rs-blue-700);
+      --rs-iconbtn-primary-addon           : var(--rs-blue-800);
+      --rs-iconbtn-primary-pressed-addon   : var(--rs-blue-800);
+    }
+  }
+}
+
+// Violet ------------------------------------------------
+button.rs-btn.rs-btn-violet.my_rsuite {
+  --rs-btn-ghost-active-border         : var(--rs-violet-100);
+  --rs-btn-ghost-active-text           : var(--rs-violet-100);
+  --rs-btn-ghost-border                : var(--rs-violet-300);
+  --rs-btn-ghost-hover-border          : var(--rs-violet-200);
+  --rs-btn-ghost-hover-text            : var(--rs-violet-200);
+  --rs-btn-ghost-text                  : var(--rs-violet-300);
+  --rs-btn-link-active-text            : var(--rs-violet-100);
+  --rs-btn-link-hover-text             : var(--rs-violet-200);
+  --rs-btn-link-text                   : var(--rs-violet-300);
+  --rs-btn-primary-active-bg           : var(--rs-violet-100);
+  --rs-btn-primary-bg                  : var(--rs-violet-300);
+  --rs-btn-primary-hover-bg            : var(--rs-violet-200);
+  --rs-btn-primary-text                : var(--rs-gray-900);
+  --rs-btn-subtle-active-bg            : var(--rs-violet-200);
+  --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+  --rs-btn-subtle-hover-bg             : var(--rs-violet-100);
+  --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+  --rs-iconbtn-primary-activated-addon : var(--rs-violet-200);
+  --rs-iconbtn-primary-addon           : var(--rs-violet-100);
+  --rs-iconbtn-primary-pressed-addon   : var(--rs-violet-100);
+
+  svg {
+    --rs-iconbtn-primary-activated-addon : var(--rs-violet-100);
+    --rs-iconbtn-primary-addon           : var(--rs-violet-200);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-violet-200);
+  }
+}
+
+.rs-theme-dark {
+  button.rs-btn.rs-btn-violet.my_rsuite {
+    --rs-btn-ghost-active-border         : var(--rs-violet-500);
+    --rs-btn-ghost-active-text           : var(--rs-violet-500);
+    --rs-btn-ghost-border                : var(--rs-violet-800);
+    --rs-btn-ghost-hover-border          : var(--rs-violet-700);
+    --rs-btn-ghost-hover-text            : var(--rs-violet-700);
+    --rs-btn-ghost-text                  : var(--rs-violet-800);
+    --rs-btn-link-active-text            : var(--rs-violet-500);
+    --rs-btn-link-hover-text             : var(--rs-violet-700);
+    --rs-btn-link-text                   : var(--rs-violet-800);
+    --rs-btn-primary-active-bg           : var(--rs-violet-700);
+    --rs-btn-primary-bg                  : var(--rs-violet-900);
+    --rs-btn-primary-hover-bg            : var(--rs-violet-800);
+    --rs-btn-primary-text                : rgb(245, 245, 245);
+    --rs-btn-subtle-active-bg            : var(--rs-violet-700);
+    --rs-btn-subtle-active-text          : var(--rs-btn-primary-text);
+    --rs-btn-subtle-hover-bg             : var(--rs-violet-600);
+    --rs-btn-subtle-hover-text           : var(--rs-btn-primary-text);
+    --rs-iconbtn-primary-activated-addon : var(--rs-violet-700);
+    --rs-iconbtn-primary-addon           : var(--rs-violet-600);
+    --rs-iconbtn-primary-pressed-addon   : var(--rs-violet-600);
+
+    svg {
+      --rs-iconbtn-primary-activated-addon : var(--rs-violet-700);
+      --rs-iconbtn-primary-addon           : var(--rs-violet-800);
+      --rs-iconbtn-primary-pressed-addon   : var(--rs-violet-800);
+    }
+  }
+}

@@ -1,12 +1,14 @@
 import "assets/indesx.css";
-import {Button} from "@repo/ui/button"
 
 
 function App() {
   return (
-    <Button appName={"Test"}>
-      Hello
-    </Button>
+    <div>
+      <h1>
+        Hello
+      </h1>
+    </div>
+
   )
 }
 

@@ -1,0 +1,113 @@
+.rs-popover[class*=placement-bottom] > .rs-popover-arrow {
+  margin-left : -6px;
+  top         : -4px;
+}
+
+.rs-modal-title {
+  line-height : unset;
+}
+
+[class="rs-pagination-btn rs-pagination-btn-active"] {
+  box-shadow : rgba(0, 0, 0, 0.12) 0 1px 3px, rgba(0, 0, 0, 0.24) 0 1px 2px;
+}
+
+[class="rs-pagination-btn rs-pagination-btn-disabled"] {
+  box-shadow  : rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+  font-weight : bolder;
+}
+
+[class="rs-pagination-btn"] {
+  box-shadow  : rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+  font-weight : bolder;
+}
+
+// Active btn in pagination in Light Mode
+.rs-theme-light [class="rs-pagination-btn rs-pagination-btn-active"] {
+  color  : var(--rs-primary-900);
+  border : 1px solid var(--rs-primary-900);
+}
+
+// Active text in tab in Light Mode
+.rs-theme-light [class="rs-nav-item rs-nav-item-active"] {
+  color : var(--rs-primary-900);
+}
+
+// Active text in tab in Dark Mode
+.rs-theme-dark [class="rs-nav-item rs-nav-item-active"] {
+  color : var(--rs-primary-400);
+}
+
+
+.rs-theme-light, :root {
+  --rs-bg-overlay             : var(--rs-gray-100);
+  --rs-form-errormessage-bg   : var(--rs-red-500);
+  --rs-form-errormessage-text : var(--rs-gray-50);
+}
+
+.rs-theme-dark, :root {
+  --rs-form-errormessage-bg   : var(--rs-red-500);
+  --rs-form-errormessage-text : var(--rs-gray-50);
+}
+
+.rs-theme-light .rs-tag-red {
+  background-color : var(--rs-red-100);
+  color            : var(--rs-text-primary);
+  box-shadow       : rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.rs-theme-dark .rs-tag-red {
+  background-color : var(--rs-red-800);
+  color            : var(--rs-text-primary);
+}
+
+.rs-theme-light .rs-tag-orange {
+  background-color : var(--rs-orange-100);
+  color            : var(--rs-text-primary);
+  box-shadow       : rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.rs-theme-dark .rs-tag-orange {
+  background-color : var(--rs-orange-800);
+  color            : var(--rs-text-primary);
+}
+
+.rs-theme-light .rs-tag-blue {
+  background-color : var(--rs-blue-100);
+  color            : var(--rs-text-primary);
+  box-shadow       : rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.rs-theme-dark .rs-tag-blue {
+  background-color : var(--rs-blue-800);
+  color            : var(--rs-text-primary);
+}
+
+.rs-theme-light .rs-tag-violet {
+  background-color : var(--rs-violet-100);
+  color            : var(--rs-text-primary);
+  box-shadow       : rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.rs-theme-dark .rs-tag-violet {
+  background-color : var(--rs-violet-800);
+  color            : var(--rs-text-primary);
+}
+
+.rs-theme-light .rs-tag-green {
+  background-color : var(--rs-green-100);
+  color            : var(--rs-text-primary);
+  box-shadow       : rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.rs-theme-dark .rs-tag-green {
+  background-color : var(--rs-green-800);
+  color            : var(--rs-text-primary);
+}
+
+
+.rs-table-cell-header-icon-sort:where([data-sort=asc]) {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
