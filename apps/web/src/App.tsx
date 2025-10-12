@@ -8,7 +8,6 @@ function App() {
         Hello World!
       </h1>
     </div>
-
   )
 }
 
