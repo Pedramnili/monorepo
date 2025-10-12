@@ -1,4 +1,4 @@
-# Turborepo Fullstack Project
+# Monorepo Project
 
 A modern monorepo setup using Turborepo with Express backend and React frontend.
 
