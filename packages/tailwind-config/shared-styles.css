@@ -1,0 +1,11 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+
+@theme {
+    --color-blue-1000: #892AF6;
+    --color-purple-1000: #a853ba;
+    --color-red-1000: #e92a67;
+}

@@ -1,4 +1,3 @@
-@import url("./styles/library/index.scss");
-@import url("./styles/public/general.scss");
-@import "tailwindcss";
+@import url("styles/general.scss");
+@import "@repo/tailwind-config";
 
