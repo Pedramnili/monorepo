@@ -1,0 +1,19 @@
+{
+  "name":            "@repo/assets",
+  "version":         "1.0.0",
+  "main":            "./styles/fonts.css",
+  "files":           [
+    "fonts",
+    "styles"
+  ],
+  "exports":         {
+    ".":           "./styles/fonts.css",
+    "./fonts.css": "./styles/fonts.css"
+  },
+  "scripts":         {
+    "build": "sass fonts:fonts --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}

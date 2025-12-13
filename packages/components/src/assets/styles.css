@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant rtl (&:where(.rtl, .rtl *));
+
+@theme {
+    --inset-shadow-md      : rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
