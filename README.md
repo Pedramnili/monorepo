@@ -67,7 +67,7 @@ This monorepo contains multiple applications managed under a single repository u
 
 - **Node.js** ≥ 18
 - **pnpm** ≥ 10
-- **npm** ≥ 10 
+- **npm** ≥ 10  
 
 ---
 
