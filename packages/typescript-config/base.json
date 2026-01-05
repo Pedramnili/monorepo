@@ -1,32 +1,150 @@
 {
-  "$schema":         "https://json.schemastore.org/tsconfig",
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "allowImportingTsExtensions":       true,
-    "allowJs":                          true,
-    "allowSyntheticDefaultImports":     true,
-    "baseUrl":                          "src",
-    "declaration":                      true,
-    "declarationMap":                   true,
-    "esModuleInterop":                  true,
+
+    // Specifies whether TypeScript allows you to import .ts files with their extension
+    // مشخص می‌کند که آیا تایپ‌اسکریپت اجازه دهد فایل‌های تی‌اس را با پسوند وارد کنید
+    // مقادیر: true | false
+    // مثال: import { foo } from './file.ts' (به جای './file')
+    "allowImportingTsExtensions": true,
+
+    // Allows importing JavaScript (.js) files in a TypeScript project
+    // اجازه می‌دهد فایل‌های جاوااسکریپت (.جی‌اس) را در پروژه تایپ‌اسکریپت وارد کنید
+    // مقادیر: true | false
+    // زمانی مفید است که دارید از JS به TS مهاجرت می‌کنید
+    "allowJs": true,
+
+    // Allows using default imports for modules that don't have a default export
+    // اجازه می‌دهد از واردکردن پیش‌فرض برای ماژول‌هایی که برون‌برد پیش‌فرض ندارند استفاده کنید
+    // مقادیر: true | false
+    // مثال: import React from 'react' به جای import * as React from 'react'
+    "allowSyntheticDefaultImports": true,
+
+    // Base path for resolving non-relative imports
+    // مسیر پایه برای حل‌کردن واردکردن‌های غیر-نسبی
+    // مقادیر: هر مسیر معتبر (مثلاً "src", ".", "./src")
+    // با این تنظیم می‌توانید به جای '../../components' بنویسید 'components'
+    "baseUrl": "src",
+
+    // Generates .d.ts (type definition) files for each TypeScript file
+    // فایل‌های .دی.تی‌اس (تعریف نوع) برای هر فایل تایپ‌اسکریپت تولید می‌کند
+    // مقادیر: true | false
+    // برای ساخت کتابخانه‌ها که دیگران استفاده می‌کنند ضروری است
+    "declaration": true,
+
+    // Creates .d.ts.map files to map declarations to the original source
+    // فایل .دی.تی‌اس.نقشه برای نگاشت‌کردن اعلان‌ها به منبع اصلی ایجاد می‌کند
+    // مقادیر: true | false
+    // کمک می‌کند IDE بتواند به سورس اصلی TypeScript jump کند
+    "declarationMap": true,
+
+    // Provides better compatibility with CommonJS modules
+    // سازگاری بهتر با ماژول‌های سیستم‌ماژول‌معمولی را فراهم می‌کند
+    // مقادیر: true | false
+    // اجازه می‌دهد import * as و import default را باهم استفاده کنید
+    "esModuleInterop": true,
+
+    // Ensures file names in imports match case-sensitivity exactly
+    // اطمینان می‌دهد نام فایل‌ها در واردکردن با حروف بزرگ/کوچک دقیقاً مطابقت دارند
+    // مقادیر: true | false
+    // مشکلات cross-platform (Windows vs Linux/Mac) را جلوگیری می‌کند
     "forceConsistentCasingInFileNames": true,
-    "incremental":                      false,
-    "isolatedModules":                  true,
-    "jsx":                              "react-jsx",
-    "lib":                              ["es2022", "DOM", "DOM.Iterable"],
-    "module":                           "ESNext",
-    "moduleDetection":                  "auto",
-    "moduleResolution":                 "bundler",
-    "noEmit":                           true,
-    "noFallthroughCasesInSwitch":       true,
-    "noImplicitAny":                    false,
-    "noUncheckedIndexedAccess":         true,
-    "noUnusedLocals":                   true,
-    "resolveJsonModule":                true,
-    "skipLibCheck":                     true,
-    "strict":                           true,
-    "target":                           "ESNext"
 
+    // Disables incremental compilation (doesn't create cache files)
+    // اطمینان می‌دهد نام فایل‌ها در واردکردن با حروف بزرگ/کوچک دقیقاً مطابقت دارند
+    // مقادیر: true | false
+    // false باعث سرعت بیشتر در compile های بعدی می‌شود
+    "incremental": false,
 
+    // Transpiles each file separately (without imports from other files)
+    // هر فایل را به صورت مجزا تبدیل می‌کند (بدون واردکردن‌های دیگر فایل‌ها)
+    // مقادیر: true | false
+    // برای bundlerهایی مثل Vite, esbuild ضروری است
+    "isolatedModules": true,
 
+    // Specifies how JSX is transformed
+    // نحوه تبدیل جی‌اس‌ایکس را مشخص می‌کند
+    // مقادیر: "preserve" | "react" | "react-jsx" | "react-jsxdev" | "react-native"
+    // "react-jsx": از React 17+ بدون نیاز به import React استفاده می‌کند
+    "jsx": "react-jsx",
+
+    // Built-in JavaScript libraries available in your code
+    // کتابخانه‌های جاوااسکریپت درون‌ساخت که در کد در دسترس هستند
+    // مقادیر: آرایه‌ای از ["es5", "es6", "es2015", ..., "es2023", "DOM", "WebWorker", ...]
+    // "es2022": ویژگی‌های JavaScript تا سال 2022
+    // "DOM": APIهای مرورگر مثل document, window
+    "lib": ["es2022", "DOM", "DOM.Iterable"],
+
+    // Specifies the output JavaScript module system
+    // سیستم ماژول خروجی جاوااسکریپت را مشخص می‌کند
+    // مقادیر: "CommonJS" | "AMD" | "UMD" | "System" | "ES6"/"ES2015" | "ESNext" | "None"
+    // "ESNext": جدیدترین استاندارد ES modules
+    "module": "ESNext",
+
+    // How to automatically detect module type (ESM or CommonJS)
+    // نحوه تشخیص خودکار نوع ماژول (ای‌اس‌ام یا سیستم‌ماژول‌معمولی)
+    // مقادیر: "auto" | "legacy" | "force"
+    // "auto": بر اساس package.json و پسوند فایل تشخیص می‌دهد
+    "moduleDetection": "auto",
+
+    // Specifies the algorithm for resolving modules
+    // الگوریتم حل‌کردن ماژول‌ها را مشخص می‌کند
+    // مقادیر: "classic" | "node" | "node16" | "nodenext" | "bundler"
+    // "bundler": برای Vite, webpack, esbuild - قوانین سبک‌تر و انعطاف‌پذیرتر
+    "moduleResolution": "bundler",
+
+    // Prevents generating JavaScript output files
+    // از تولید فایل‌های جاوااسکریپت خروجی جلوگیری می‌کند
+    // مقادیر: true | false
+    // فقط type-checking انجام می‌شود، خود bundler کامپایل می‌کند
+    "noEmit": true,
+
+    // Errors if you forget break in switch/case
+    // خطا می‌دهد اگر در سوییچ/کیس از شکستن فراموش شود
+    // مقادیر: true | false
+    // از باگ‌های رایج fallthrough جلوگیری می‌کند
+    "noFallthroughCasesInSwitch": true,
+
+    // Disables using 'any' without explicit definition
+    // اجازه استفاده از 'هرنوع' بدون تعریف صریح را غیرفعال می‌کند
+    // مقادیر: true | false
+    // false: می‌توانید متغیر بدون type بنویسید و خودکار 'any' می‌شود
+    "noImplicitAny": false,
+
+    // Returns array/object index access as undefined | T
+    // دسترسی به شاخص آرایه‌ها/اشیاء را به صورت تعریف‌نشده | تی برمی‌گرداند
+    // مقادیر: true | false
+    // arr[5] ممکن است undefined باشد، این گزینه آن را چک می‌کند
+    "noUncheckedIndexedAccess": true,
+
+    // Errors for local variables that are unused
+    // خطا می‌دهد برای متغیرهای محلی که استفاده نشده‌اند
+    // مقادیر: true | false
+    // کمک به پاک‌سازی کد و حذف کدهای اضافی
+    "noUnusedLocals": true,
+
+    // Allows importing JSON files
+    // اجازه واردکردن فایل‌های جی‌سان را می‌دهد
+    // مقادیر: true | false
+    // مثال: import data from './config.json'
+    "resolveJsonModule": true,
+
+    // Skips type checking of .d.ts files in node_modules
+    // بررسی نوع فایل‌های .دی.تی‌اس در گره_ماژول‌ها را رد می‌کند
+    // مقادیر: true | false
+    // سرعت compile را افزایش می‌دهد
+    "skipLibCheck": true,
+
+    // Enables all strict type checks
+    // همه بررسی‌های سختگیرانه نوع را فعال می‌کند
+    // مقادیر: true | false
+    // شامل: strictNullChecks, strictFunctionTypes, noImplicitThis و ...
+    "strict": true,
+
+    // Specifies the output JavaScript version
+    // نسخه جاوااسکریپت خروجی را مشخص می‌کند
+    // مقادیر: "ES3" | "ES5" | "ES6"/"ES2015" | ... | "ES2023" | "ESNext"
+    // "ESNext": جدیدترین ویژگی‌های JavaScript
+    "target": "ESNext"
   }
 }

@@ -1,6 +1,8 @@
 {
   "name":             "@repo/rsuite",
   "version":          "1.0.0",
+  "type":            "module",
+  "private":         true,
   "description":      "Custom UI Library based on rsuite",
   "exports":          {
     ".": {

@@ -3,6 +3,7 @@
   "version":         "1.0.0",
   "type":            "module",
   "private":         true,
+  "description":      "Custom UI Library tailwind",
   "exports":         {
     ".":         "./shared-styles.css",
     "./postcss": "./postcss.config.js"
