@@ -1,18 +1,17 @@
 {
   "name":             "@repo/components",
-  "version":          "0.0.0",
+  "version":          "1.0.0",
   "exports":          {
     ".":            {
       "import": "./src/index.tsx"
     },
     "./styles.css": "./src/assets/index.css"
   },
-  "license":          "MIT",
   "scripts":          {
     "dev": "tailwindcss -i src/assets/styles.css -o src/assets/index.css --watch"
   },
-  "peerDependencies": {
-    "react": "^19"
+  "dependencies":     {
+    "clsx": "^2.1.1"
   },
   "devDependencies":  {
     "@repo/eslint-config":     "workspace:*",
@@ -23,7 +22,7 @@
     "tailwindcss":             "^4.1.17",
     "typescript":              "^5.9.3"
   },
-  "dependencies":     {
-    "clsx": "^2.1.1"
+  "peerDependencies": {
+    "react": "^19"
   }
 }

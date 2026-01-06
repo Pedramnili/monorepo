@@ -1,9 +1,10 @@
-import React, {MouseEventHandler, ReactNode, useState} from "react";
+import {useState} from "react";
+import {SidebarComponent, SidebarItemProps, SidebarMenuProps, SidebarProps} from "./Sidebar.types";
 import clsx from "clsx";
 import "./Sidebar.css"
 
 
-export const Sidebar = ({as: Component = "div", to, isOpen, setIsOpen, className, icon, text, iconPin, setPin, pin, children}: SidebarProps) => {
+export const Sidebar : SidebarComponent = ({as: Component = "div", to, isOpen, setIsOpen, className, icon, text, iconPin, setPin, pin, children}: SidebarProps) => {
   return (
     <nav
       onMouseEnter={() => !pin ? setIsOpen ? setIsOpen(true) : null : null}
@@ -84,40 +85,3 @@ Sidebar.Item = function SidebarItem({as: Component = "a", active, to, icon, chil
 };
 
 
-// Type definition
-interface SidebarProps {
-  isOpen?: boolean;
-  pin?: boolean;
-  setIsOpen?: (open: boolean) => void;
-  setPin?: (open: boolean) => void;
-  className?: string;
-  icon?: ReactNode;
-  iconPin?: ReactNode;
-  text?: string;
-  children?: ReactNode
-  as?: any
-  to?: any
-}
-
-interface SidebarItemProps {
-  colorActive?: "gray" | "green" | "red" | "blue" | "emerald"
-  href?: string;
-  children: ReactNode;
-  className?: string;
-  onClick?: MouseEventHandler<HTMLAnchorElement>;
-  icon?: ReactNode;
-  as: any
-  to: any
-  active: boolean
-}
-
-interface SidebarMenuProps {
-  icon?: ReactNode;
-  label: string;
-  children?: ReactNode;
-  className?: string;
-  defaultOpen?: boolean;
-  open?: boolean,
-  setOpen?: (open: boolean) => void;
-  active: boolean,
-}

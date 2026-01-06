@@ -1,9 +1,11 @@
 {
   "name":             "@repo/rsuite",
   "version":          "1.0.0",
-  "type":            "module",
-  "private":         true,
+  "type":             "module",
+  "private":          true,
   "description":      "Custom UI Library based on rsuite",
+  "main":             "./src/index.tsx",
+  "types":            "./src/index.tsx",
   "exports":          {
     ".": {
       "types":   "./src/index.tsx",
@@ -13,14 +15,17 @@
   "dependencies":     {
     "rsuite": "^5.83.3"
   },
+  "devDependencies":  {
+    "@repo/typescript-config": "workspace:*",
+    "@types/react":            "^19.1.16",
+    "@types/react-dom":        "^19.1.9",
+    "react":                   "^19.1.1",
+    "react-dom":               "^19.1.1",
+    "sass":                    "^1.93.2",
+    "typescript":              "~5.9.3"
+  },
   "peerDependencies": {
     "react":     "^19.1.1",
     "react-dom": "^19.1.1"
-  },
-  "devDependencies":  {
-    "@types/react":     "^19.1.16",
-    "@types/react-dom": "^19.1.9",
-    "typescript":       "~5.9.3",
-    "sass":             "^1.93.2"
   }
 }

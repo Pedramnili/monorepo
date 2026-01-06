@@ -1,5 +1,7 @@
+import clsx from "clsx";
 import {createContext, useContext} from "react";
-import {TableContextValue, RowContextValue, ITableProps, ITableHeadProps, ITableBodyProps, ITableHeadCellProps, ITableRowProps, ITableCellProps, TableComponent} from "./Table.types";
+import {Loading} from "../Loading/Loading.component";
+import {TableContextValue, RowContextValue, TableProps, TableHeadProps, TableBodyProps, TableHeadCellProps, TableRowProps, TableCellProps, TableComponent} from "./Table.types";
 import "./Table.css"
 
 
@@ -22,19 +24,28 @@ export const useRowContext = () => {
   return context;
 };
 
-export const Table: TableComponent = ({items, children}: ITableProps) => {
+export const Table: TableComponent = ({items, children, className, height, loading}: TableProps) => {
   return (
     <TableContext.Provider value={{items}}>
-      <table className="table w-full mt-4 text-sm text-center border border-gray-300 dark:border-gray-600 border-separate border-spacing-0 rounded-lg">
-        {children}
-      </table>
+      <div style={{height}} className={clsx("overflow-y-auto border relative border-gray-300 dark:border-gray-600 rounded-lg")}>
+        <table className={"table w-full mt-4 text-sm text-center  border-separate border-spacing-0 rounded-lg " + className}>
+          {children}
+        </table>
+        {
+          loading ?
+          <div className={"absolute top-0 left-0 w-full h-full backdrop-blur-[2px] bg-gray-950/40 flex justify-center items-center text-md"}>
+            <Loading text={"لطفا صبر کنید..."}/>
+          </div>
+          : null
+        }
+      </div>
     </TableContext.Provider>
   );
 };
 
-Table.Head = function Head({children}: ITableHeadProps) {
+Table.Head = function Head({children, className}: TableHeadProps) {
   return (
-    <thead className="bg-gray-200 dark:bg-gray-700">
+    <thead className={"bg-gray-200 dark:bg-gray-700 " + className}>
       <tr>
         {children}
       </tr>
@@ -42,7 +53,7 @@ Table.Head = function Head({children}: ITableHeadProps) {
   )
 }
 
-Table.HeadCell = function HeadCell({children}: ITableHeadCellProps) {
+Table.HeadCell = function HeadCell({children}: TableHeadCellProps) {
   return (
     <th className="p-2 border-e border-b border-gray-300 dark:border-gray-600">
       {children}
@@ -50,11 +61,11 @@ Table.HeadCell = function HeadCell({children}: ITableHeadCellProps) {
   )
 }
 
-Table.Body = function Body({children}: ITableBodyProps) {
+Table.Body = function Body({children, className}: TableBodyProps) {
   const {items} = useTableContext();
 
   return (
-    <tbody>
+    <tbody className={className}>
       {items.map((item, index) => (
         <RowContext.Provider key={index} value={{item, index}}>
           {children}
@@ -64,17 +75,17 @@ Table.Body = function Body({children}: ITableBodyProps) {
   );
 }
 
-Table.Row = function Row({children, className = ""}: ITableRowProps) {
+Table.Row = function Row({children, className = ""}: TableRowProps) {
   const {item, index} = useRowContext();
 
   const resolvedClassName = typeof className === 'function'
     ? className(item, index)
     : className;
 
-  return <tr className={resolvedClassName}>{children}</tr>
+  return <tr className={clsx("h-10", resolvedClassName)}>{children}</tr>
 }
 
-Table.Cell = function Cell({children, dataKey, className = "", rowSpan, colSpan}: ITableCellProps) {
+Table.Cell = function Cell({children, dataKey, className = "", rowSpan, colSpan}: TableCellProps) {
   const {item, index} = useRowContext();
 
   let resolvedChildren;

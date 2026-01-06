@@ -39,8 +39,7 @@ export const Dropdown: FC<IProps> = ({avatar, items, className = ""}) => {
           "
         >
           {/* Triangle */}
-          <div
-            className="absolute top-[-5px] right-4 rtl:left-4 rtl:right-auto w-3 h-3 bg-white dark:bg-gray-800 rotate-45 border-l border-t border-gray-200 dark:border-gray-700"/>
+          <div className="absolute top-[-5px] right-4 rtl:left-4 rtl:right-auto w-3 h-3 bg-white dark:bg-gray-800 rotate-45 border-l border-t border-gray-200 dark:border-gray-700"/>
           {items.map((item, idx) => {
             return (
               <button
